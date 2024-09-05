@@ -1,0 +1,13 @@
+name: "Runner var test"
+on:
+  workflow_dispatch:
+
+
+jobs:
+  hello-world-job:
+    name: "Echo ubuntu-latest"
+    environment: "dev"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: hello-world
+        run: echo ${{vars.RUNNER}}
