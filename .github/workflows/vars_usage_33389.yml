@@ -1,7 +1,15 @@
-  test-job:
-    name: "Can echo Hello World!"
-    environment: "dev"
-    runs-on: ${{vars.RUNNER}}
-    steps:
-      - name: hello-world
-        run: echo "Hello World!"
+name: "Runner var test fail"
+on:
+  workflow_dispatch:
+
+
+jobs:
+    display-variables:
+      name: "Echo Hello World!"
+      environment: "dev"
+      runs-on: ${{vars.RUNNER}}
+      steps:
+        - name: hello-world
+          run: echo "Hello World!"
+
+
