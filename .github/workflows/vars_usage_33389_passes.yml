@@ -5,7 +5,7 @@ on:
 
 jobs:
   hello-world-job:
-    name: "Echo ubuntu-latest"
+    name: "Echo default environment variables"
     environment: "dev"
     runs-on: "ubuntu-latest"
     steps:
