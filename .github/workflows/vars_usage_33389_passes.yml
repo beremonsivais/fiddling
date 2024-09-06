@@ -10,4 +10,6 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - name: hello-world
-        run: echo ${{vars.RUNNER}} ${{ runner.name.ref }}
+        run: |
+          echo ${{vars.RUNNER}} 
+          echo "${{RUNNER_NAME}}"
